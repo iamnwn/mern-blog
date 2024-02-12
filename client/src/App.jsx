@@ -5,10 +5,14 @@ import About from "./pages/About";
 import SignUp from "./pages/SignUp";
 import SignIn from "./pages/SignIn";
 import Dashboard from "./pages/Dashboard";
+import Header from "./components/Header";
 
+// This is the main component of the application
 const App = () => {
+  // Render the application routes using BrowserRouter
   return (
     <BrowserRouter>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
