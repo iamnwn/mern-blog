@@ -6,6 +6,7 @@ import SignUp from "./pages/SignUp";
 import SignIn from "./pages/SignIn";
 import Dashboard from "./pages/Dashboard";
 import Header from "./components/Header";
+import FooterComponent from "./components/FooterComponent";
 
 // This is the main component of the application
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
+      <FooterComponent />
     </BrowserRouter>
   );
 };
